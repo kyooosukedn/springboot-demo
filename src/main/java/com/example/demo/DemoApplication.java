@@ -4,6 +4,7 @@ import com.example.demo.student.Student;
 import com.example.demo.student.StudentController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,7 +16,8 @@ import java.util.List;
 public class DemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+        ConfigurableApplicationContext context =  SpringApplication.run(DemoApplication.class, args);
+        context.get;
     }
 
 
